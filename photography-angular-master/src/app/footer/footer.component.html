@@ -1,0 +1,20 @@
+<!-- footer -->
+<footer class = "footer">
+    <div class = "footer-container container">
+        <div>
+            <h2>SATEESH </h2>
+            <p>{{aboutInfo.me}}</p>
+        </div>
+        <div>
+            <h3>Free Subscription!</h3>
+            <p> To get all updates , subscribe  with your mail id.  </p>
+            <div class = "subs">
+                <i class = "fas fa-envelope"></i>
+                <input type = "email" id = "email" name="subEmail" required [(ngModel)]="subEmail" placeholder="Email Address">
+                <button type = "submit"  (click)="subscribeEmail()">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+    <p>&copy; Copyright SATEESH PATHIWADA </p>
+</footer>
+<!-- end of footer -->

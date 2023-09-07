@@ -1,0 +1,105 @@
+CREATE TABLE IF NOT EXISTS about (
+    `id` int(5) NOT NULL AUTO_INCREMENT,
+    `type` varchar(20) DEFAULT NULL,
+    `text` varchar(500) DEFAULT NULL,
+     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+    );
+INSERT INTO `photography_data`.`about`  (`type`,`text`) VALUES ('me','Hi, I\'m a Photographer & Entrepreneur! I have been Recognized as CANON EOS Influencer at CANON India. My work spans across domains such as wedding, couple shoots, travel photography and end to end branding and identity design support for companies.');
+    INSERT INTO `photography_data`.`about`  (`type`,`text`) VALUES ('my_team','We are incredibly blessed to have a team of photographers who work with us on any given weekend. Please take a few minutes to get to know us. We would love to visit with you by phone or in person and talk about your wedding, event, portrait session or video project. Please reach out to us through the Contact Page.');
+
+    INSERT INTO `photography_data`.`about`  (`type`,`text`) VALUES ('my_thoughts','To us photography is about people being real and then letting us paint a picture of that moment to remember it forever. This is the story that matters most: real people, real stories, real moments');
+    INSERT INTO `photography_data`.`about`  (`type`,`text`) VALUES ('my_quote','Taking an image, freezing a moment, reveals how rich reality truly is.');
+    
+INSERT INTO `photography_data`.`about`  (`type`,`text`) VALUES ('aaron_siskind','Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever ... It remembers little things, long after you have forgotten everything.');
+CREATE TABLE IF NOT EXISTS social_media (
+    `id` int(5) NOT NULL AUTO_INCREMENT,
+    `medium` varchar(20) DEFAULT NULL,
+    `links` varchar(100) DEFAULT NULL,
+     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+    );
+
+INSERT INTO `photography_data`.`social_media`  (`medium`,`links`) VALUES ('facebook','https://www.facebook.com/');
+INSERT INTO `photography_data`.`social_media`  (`medium`,`links`) VALUES ('instagram','https://www.instagram.com/');
+INSERT INTO `photography_data`.`social_media`  (`medium`,`links`) VALUES ('twitter','https://twitter.com/');
+INSERT INTO `photography_data`.`social_media`  (`medium`,`links`) VALUES ('pinterest','https://www.pinterest.com/');
+CREATE TABLE IF NOT EXISTS tips (
+    `id` int(5) NOT NULL AUTO_INCREMENT,
+    `type` varchar(20) DEFAULT NULL,
+    `text` varchar(1000) DEFAULT NULL,
+     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+    );
+
+
+    INSERT INTO `photography_data`.`tips`  (`type`,`text`) VALUES ('photography','RAW is a file format like jpeg, but unlike jpeg, it captures all the image data recorded by your camera’s sensor rather than compressing it. When you shoot in RAW you’ll not only get higher quality images but you’ll also have far more control in post processing. For instance, you’ll be able to correct problems such as over or underexposure and adjust things like colour temperature, white balance and contrast. One downside to shooting in RAW is that the files take up more space. Additionally, RAW photos always need some post processing so you’ll need to invest in photo editing software. Ultimately, however, shooting in RAW can transform the quality of your images, so if you have the time and space, it’s definitely worth it. If you’re not sure how to switch from jpeg to RAW, check your camera’s manual for detailed instructions');
+
+    INSERT INTO `photography_data`.`tips`  (`type`,`text`) VALUES ('editing','Any video that features a lot of talking will benefit from an editor that knows how to make tight cuts. Cutting scenes tight means taking out unnecessary pauses, using timely cutaways to close gaps between dialogue, or even losing lines of dialogue all together. Most projects will also have an estimated running time that needs to be kept in mind and making efficient cuts that can compress time will save you from having to go back and re-work scenes if you find the edit is running long.');
+CREATE TABLE IF NOT EXISTS contact (
+    `id` int(5) NOT NULL AUTO_INCREMENT,
+    `type` varchar(20) DEFAULT NULL,
+    `details` varchar(200) DEFAULT NULL,
+     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+    );
+
+
+    INSERT INTO `photography_data`.`contact`  (`type`,`details`) VALUES ('address','Main Street - 3456, California 0000');
+    INSERT INTO `photography_data`.`contact`  (`type`,`details`) VALUES ('phoneNum','0987654321');
+    INSERT INTO `photography_data`.`contact`  (`type`,`details`) VALUES ('mail','info@gmail.com');
+    INSERT INTO `photography_data`.`contact`  (`type`,`details`) VALUES ('website','https://www.example.com');
+CREATE TABLE IF NOT EXISTS messages (
+    `id` int(5) NOT NULL AUTO_INCREMENT,
+    `name` varchar(20) DEFAULT NULL,
+    `email` varchar(50) DEFAULT NULL,
+    `subject` varchar(100) DEFAULT NULL,
+    `message` varchar(1000) DEFAULT NULL,
+     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+    );
+
+    INSERT INTO `photography_data`.`messages`  (`name`,`email`,`subject`,`message`) VALUES ('John Doe','john.doe@example.com','This is a test subject','This is a test message');
+CREATE TABLE IF NOT EXISTS subscriptions (
+    `id` int(5) NOT NULL AUTO_INCREMENT,
+    `email` varchar(50) DEFAULT NULL,
+    `sentMail` BOOLEAN NOT NULL  DEFAULT 0,
+     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+    );
+
+       INSERT INTO `photography_data`.`subscriptions`  (`email`,`sentMail`) VALUES ('john.doe@example.com',0);
+
+
+
+
+
+
+
+
+
+
+Flanagan, David, "JavaScript - The Definitive Guide", 5th ed., O'Reilly, Sebastopol, CA, 2006, p.497
+
+https://techaffinity.com/blog/when-to-choose-single-page-apps-spas-and-traditional-web-apps/
+
+https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/choose-between-traditional-web-and-single-page-apps
+
+
+https://doi.org/10.15673/atbp.v10i1.874
+
+Monteiro, F., 2014. Learning single-page web application development. Packt Publishing Ltd.
+
+
+https://doi.org/10.1088/1757-899X/801/1/012136
+
+https://blog.angular-university.io/why-a-single-page-application-what-are-the-benefits-what-is-a-spa/
+
+https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js
+
