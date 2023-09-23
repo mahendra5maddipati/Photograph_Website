@@ -1,2 +1,7 @@
 ---Single Page Web Application---
-Using different Tools
+>	I am able to provide the user with a much-enhanced experience.
+>	Because less bandwidth is being consumed and no complete page refreshes are happening while the user navigates around the program, the program will seem to be quicker(Angular SPA: Why Single Page Applications, 2021).
+>	This application will be much simpler to deploy in production, at least in terms of the client portion: all we need is a static server to serve.
+>	I also use code splitting to divide the bundles into various portions if the situation requires it.
+>	Using versioning in production, the frontend portion of the program is quite basic, allowing for simpler deployment and rollbacks to prior versions of the frontend if necessary.
+
