@@ -1,4 +1,4 @@
-----Single Page Web Application----
+---Single Page Web Application---
 >	I am able to provide the user with a much-enhanced experience.
 >	Because less bandwidth is being consumed and no complete page refreshes are happening while the user navigates around the program, the program will seem to be quicker(Angular SPA: Why Single Page Applications, 2021).
 >	This application will be much simpler to deploy in production, at least in terms of the client portion: all we need is a static server to serve.
